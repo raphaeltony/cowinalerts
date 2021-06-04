@@ -3,6 +3,7 @@
 import requests
 import time
 import smtplib
+import sys
 import androidhelper
 
 # Define Constants
@@ -67,6 +68,6 @@ while True:
                         droid.ttsSpeak(
                             "ALERT ! ALERT ! Vaccines are available")
                     alertDiag(message_string)
-                    break
+                    sys.exit("Script finished successfully")
 
         time.sleep(60)
